@@ -12,7 +12,7 @@ after_success:
   - docker build -t magnusfahlin/multi-client ./client
   - docker build -t magnusfahlin/multi-nginx ./nginx
   - docker build -t magnusfahlin/multi-server ./server
-  - docker build -t magnusfahlin/multi-worker./worker
+  - docker build -t magnusfahlin/multi-worker ./worker
 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
